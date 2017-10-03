@@ -1,0 +1,13 @@
+<p>This extension allows replay of requests in multiple sessions. Its main purpose is to aid in searching for Privilege Escalation issues.</p>
+
+<p>Instructions:</p>
+
+<ol>
+
+    <li>Add requests from HTTP History or Site map by choosing "Send to Replay" from the context menu.</li>
+    <li>Define any number of modifications by adding them to the modifications table. They will be applied to the base requests ("Original" tab). Four types of modifications are available: header, cookie, GET and POST.</li>
+    <li>You can define a session in any Request/Response Editor within Burp by selecting text (e.g. "SESSIONID=sessionid") and choosing "Define replay session" from the context menu.
+        The session will be added to the Sessions table and can be applied as a modification with "Apply" button.</li>
+    <li>Details tabs on the right hand side show the original set of requests (base requests) and each replay round in numbered tabs. You can compare responses manually or use Burp Comparer.</li>
+</ol>
+

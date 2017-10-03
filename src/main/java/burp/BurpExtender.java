@@ -68,7 +68,7 @@ public class BurpExtender implements IBurpExtender, IContextMenuFactory, ITab {
         this.helpers = callbacks.getHelpers();
 
         // set our extension name
-        this.callbacks.setExtensionName("Burplay");
+        this.callbacks.setExtensionName("Multi session replay");
 
         // context menu
         callbacks.registerContextMenuFactory(this);
@@ -89,7 +89,7 @@ public class BurpExtender implements IBurpExtender, IContextMenuFactory, ITab {
         }
 
         // welcome message
-        log(String.format("Burplay %s\nMichal Talecki <mtalecki@trustwave.com>", version));
+        log(String.format("Multi session replay %s\nMichal Talecki <mtalecki@trustwave.com>", version));
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -709,7 +709,7 @@ public class BurpExtender implements IBurpExtender, IContextMenuFactory, ITab {
 
             String dialogMessage = String.format("Enter name for the following session cookie details:\n\n%s\n\n", selected);
 
-            String sesName = JOptionPane.showInputDialog((Component)e.getSource(), dialogMessage,"Define Burplay session", JOptionPane.QUESTION_MESSAGE);
+            String sesName = JOptionPane.showInputDialog((Component)e.getSource(), dialogMessage,"Define replay session", JOptionPane.QUESTION_MESSAGE);
             if (sesName == null) {
                 return;
             }

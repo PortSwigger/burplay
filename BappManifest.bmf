@@ -1,0 +1,12 @@
+Uuid: 47319d00cae2447e8319db423913e19c
+ExtensionType: 1
+Name: Multi Session Replay
+RepoName: multi-session-replay
+ScreenVersion: 0.6.2
+SerialVersion: 0
+MinPlatformVersion: 0
+ProOnly: False
+Author: Michal Talecki
+ShortDescription: Allows replay of requests in multiple sessions, to identify authorization vulnerabilities
+EntryPoint: target/Burplay.jar
+BuildCommand: mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B
